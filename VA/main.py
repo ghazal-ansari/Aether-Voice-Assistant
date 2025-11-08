@@ -29,7 +29,7 @@ def tts_agent():
             break
         with speak_lock:
             try:
-                filename = os.path.join("static", "sounds", "temp_audio.mp3")
+                filename = "temp_audio.mp3"
                 tts = gTTS(text=text, lang="en")
                 tts.save(filename)
 
